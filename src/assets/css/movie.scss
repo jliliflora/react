@@ -1,0 +1,23 @@
+//안에 집어넣어서 쓸 수 있는게 네스팅 기법
+.movie__inner {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    margin-bottom: 100px;
+
+    li {
+      width: 24%;
+
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+// 애니메이션
+.movie__inner {
+  opacity: 0;
+  transform: translateY(100px);
+}
