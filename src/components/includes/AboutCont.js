@@ -46,18 +46,19 @@ const aboutText = [
 
 function AboutCont() {
   return (
-    <section className="about__cont light">
+    <section className="about__cont">
       <div className="container">
         <div className="about__inner">
-          
-              {aboutText.map((about) => (
-                <AboutInfo 
-                image={about.image} key1={about.image}
-                title={about.title} key2={about.title} 
-                desc={about.desc} key3={about.desc} 
-                />
-              ))}
-          
+          {aboutText.map((about) => (
+            <AboutInfo
+              image={about.image}
+              key1={about.image}
+              title={about.title}
+              key2={about.title}
+              desc={about.desc}
+              key3={about.desc}
+            />
+          ))}
         </div>
       </div>
     </section>
